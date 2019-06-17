@@ -4,9 +4,9 @@ import os
 
 
 jinjaEnv = jinja2.Environment(
-    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
-    extensions=['jinja2.ext.autoescape'],
-    autoescape=True)
+    loader = jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions = ["jinja2.ext.autoescape"],
+    autoescape = True)
 
 class WelcomeHandler(webapp2.RequestHandler):
     def get(self):
@@ -15,7 +15,6 @@ class WelcomeHandler(webapp2.RequestHandler):
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write(jinjaEnv.get_template("templates/main.html").render())
-
 
 class GenerateHandler(webapp2.RequestHandler):
     def get(self):
@@ -36,9 +35,9 @@ class FAQsHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ("/", WelcomeHandler),
-    ("/main", MainHandler),
-    ("/generate", GenerateHandler),
-    ("/About_Us", AboutUsHandler),
+    ("/Main", MainHandler),
+    ("/Generate", GenerateHandler),
+    ("/AboutUs", AboutUsHandler),
     ("/Feedback", FeedbackHandler),
-    ("/FAQs", FAQsHandler),
+    ("/FAQ", FAQsHandler),
 ], debug=True)
