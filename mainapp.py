@@ -16,7 +16,6 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write(jinjaEnv.get_template("templates/main.html").render())
 
-
 class GenerateHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write(jinjaEnv.get_template("templates/generate.html").render())
@@ -40,5 +39,5 @@ app = webapp2.WSGIApplication([
     ("/generate", GenerateHandler),
     ("/About_Us", AboutUsHandler),
     ("/Feedback", FeedbackHandler),
-    ("/FAQs", FAQsHandler),
+    ("/FAQ", FAQsHandler),
 ], debug=True)
