@@ -4,6 +4,7 @@
 }
 
 .welcome_body {
+  margin: 0px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -13,20 +14,25 @@
 }
 
 .feedback_body {
+  margin: 0px;
   font-family: 'Permanent Marker', cursive;
 }
 
 .generate_body {
+  margin: 0px;
   font-family: 'Marcellus SC',w serif;
 }
 
 .main_body {
+  margin: 0px;
   font-family: 'Rye', cursive;
 }
 
 h2 {
   color: black;
 }
+
+
 
 #title_border {
   margin: 0px;
@@ -37,11 +43,19 @@ h2 {
 
 #title {
   text-align: center;
-  background-clip: content-box;
   --padding: 2% 35% 2% 35%;
   padding: var(--padding);
-  background-color: #c7e8ff;
+  background-clip: content-box;
+  background-color: #254558;
   line-height: 10%;
+}
+#title_border_radius {
+  border: 2px solid #c7e8ff;
+  --padding: 2% 0 2% 0;
+  padding: var(--padding);
+  border-radius: 20px;
+  background-color: #c7e8ff;
+  text-align: center;
 }
 
 
