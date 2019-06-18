@@ -8,6 +8,7 @@
 }
 
 .faq_body {
+  margin: 0px;
   font-family: 'Permanent Marker', cursive;
 }
 
@@ -27,17 +28,22 @@ h2 {
   color: black;
 }
 
-#title_boarder {
-  padding: 10px;
+#title_border {
+  margin: 0px;
+  height: 20%;
   background-color: #254558;
+  position: relative;
 }
 
 #title {
-  margin: 10px;
-  border: 10px;
-  background-color: #c7e8ff;
   text-align: center;
+  background-clip: content-box;
+  --padding: 2% 35% 2% 35%;
+  padding: var(--padding);
+  background-color: #c7e8ff;
+  line-height: 10%;
 }
+
 
 .title {
 
