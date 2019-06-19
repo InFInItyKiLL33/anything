@@ -1,5 +1,5 @@
 .about_us_body {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Marcellus SC', serif;
 }
 
 .welcome_body {
@@ -8,8 +8,8 @@
 
 .faq_body {
   margin: 0px;
+  font-family: 'Harmattan', sans-serif;
   background-color: rgb(235,235,235);
-  font-family: 'Permanent Marker', cursive;
 }
 #faq_title {
   margin-top: 30px;
@@ -28,16 +28,20 @@
 }
 
 .feedback_body {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Marcellus SC', serif;
 }
 
 .generate_body {
-  font-family: 'Marcellus SC',w serif;
+  font-family: 'Marcellus SC', serif;
 }
 
 .main_body {
   margin: 0px;
   font-family: 'Rye', cursive;
+}
+
+body {
+  background: rgb(235, 235, 235);
 }
 
 #welcome_name {
@@ -48,15 +52,12 @@
 }
 
 #title_border {
-  margin: 0px;
-  height: 20%;
   background-color: #254558;
-  position: relative;
 }
 
 #title {
   text-align: center;
-  --padding: 2% 35% 2% 35%;
+  --padding: 1% 38% 1% 38%;
   padding: var(--padding);
   background-clip: content-box;
   background-color: #254558;
@@ -64,12 +65,20 @@
 }
 
 #title_border_radius {
-  border: 2px solid #c7e8ff;
-  --padding: 2% 0 2% 0;
-  padding: var(--padding);
+  border: 1px solid #c7e8ff;
   border-radius: 20px;
   background-color: #c7e8ff;
   text-align: center;
+  height: 50px;
+  box-shadow: 1px 1px 1px 1px rgb(25, 25, 25, 0.75);
+}
+
+#titleOnline {
+  margin-top: 0;
+}
+
+#titleTOD {
+  margin-bottom: 15px;
 }
 
 /* footer */
@@ -78,25 +87,49 @@ footer {
   bottom: 0;
   width: 100%;
   margin: 0;
-  border-left: 10px solid grey;
+  margin-left: -1px;
+  border: 1px solid black;
   display: flex;
-  flex-flow: row wrap;
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
+  height: 40px;
 }
+
 .navigation, .nav {
   list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: 6.5px;
+  margin-bottom: 12.5px;
 }
 
 .nav {
-  position: absolute;
-  right: 30px;
+  padding-left: 0%;
 }
+
+.nav2 {
+  width: 87.5%;
+  white-space: nowrap;
+}
+
+#navFAQ {
+  text-align: right;
+}
+
 .nav_direct {
   margin-left: 15px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+ul {
+  text-decoration: none;
+}
+
+#website_name {
+  margin-left: 3%;
+  white-space: nowrap;
+  margin-top: 11px;
 }
 
 .ClickableArea{
@@ -134,4 +167,24 @@ footer {
   border: 1px solid black;
   border-radius: 25%;
   box-shadow: 2px 2px 2px rgb(25, 25, 25, 0.5);
+}
+
+.age{
+  margin-left: 3%;
+}
+
+#filter{
+  margin-left:1.8%;
+}
+
+.restrictions{
+  margin-left:3%;
+}
+
+#compulsory {
+  margin-left:1.8%;
+}
+
+.name_and_age{
+  margin-left:3%;
 }
