@@ -148,3 +148,23 @@ ul {
   border-radius: 25%;
   box-shadow: 2px 2px 2px rgb(25, 25, 25, 0.5);
 }
+
+.age{
+  margin-left: 3%;
+}
+
+#filter{
+  margin-left:1.8%;
+}
+
+.restrictions{
+  margin-left:3%;
+}
+
+#compulsory {
+  margin-left:1.8%;
+}
+
+.name_and_age{
+  margin-left:3%;
+}
