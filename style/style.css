@@ -32,15 +32,12 @@
 }
 
 #title_border {
-  margin: 0px;
-  height: 20%;
   background-color: #254558;
-  position: relative;
 }
 
 #title {
   text-align: center;
-  --padding: 2% 35% 2% 35%;
+  --padding: 1% 38% 1% 38%;
   padding: var(--padding);
   background-clip: content-box;
   background-color: #254558;
@@ -48,12 +45,20 @@
 }
 
 #title_border_radius {
-  border: 2px solid #c7e8ff;
-  --padding: 2% 0 2% 0;
-  padding: var(--padding);
+  border: 1px solid #c7e8ff;
   border-radius: 20px;
   background-color: #c7e8ff;
   text-align: center;
+  height: 50px;
+  box-shadow: 1px 1px 1px 1px rgb(25, 25, 25, 0.75);
+}
+
+#titleOnline {
+  margin-top: 0;
+}
+
+#titleTOD {
+  margin-bottom: 15px;
 }
 
 /* footer */
@@ -62,9 +67,11 @@ footer {
   bottom: 0;
   width: 100%;
   margin: 0;
-  border-left: 10px solid grey;
+  margin-left: -1px;
+  border: 1px solid black;
   display: flex;
-  background-color: grey;
+  background-color: rgb(235, 235, 235);
+  height: 40px;
 }
 
 .navigation, .nav {
@@ -72,7 +79,7 @@ footer {
   display: flex;
   text-align: center;
   justify-content: flex-end;
-  margin-top: 12.5px;
+  margin-top: 6.5px;
   margin-bottom: 12.5px;
 }
 
@@ -92,7 +99,7 @@ footer {
 .nav_direct {
   margin-left: 15px;
   border: none;
-  background-color: grey;
+  background-color: rgb(235, 235, 235);
 }
 
 ul {
@@ -102,6 +109,7 @@ ul {
 #website_name {
   margin-left: 3%;
   white-space: nowrap;
+  margin-top: 11px;
 }
 
 .ClickableArea{
