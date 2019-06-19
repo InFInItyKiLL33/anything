@@ -93,3 +93,6 @@ h1 {
   top : 56%;
   font-size: 40px;
 }
+#filter{
+  text-decoration: underline;
+}
