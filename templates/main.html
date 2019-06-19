@@ -17,8 +17,9 @@
     </div>
     <div>
       <div id="filter">
-      filters
+      filters optional
       </div>
+
       <div>
         Age group:
 
@@ -77,18 +78,18 @@
           <span class="checkmark"></span>
         </label>
         Adult
-
-      </div>
     </div>
     <br>
-    <div class=optional>
     *Compulsory*
-    <br>
-    players name  age
-    <br>
-      <input type="text"  id="player_name">
-        <input type="number"  id="player_age">
-  </div>
-    <h1>  </h1>
+
+    <form class="form-inline" action="/action_page.php">
+  <label for="name">Name:</label>
+  <input type="name" id="player_name" placeholder="Enter  player names" name="player_name" multiple inputs>
+  <label for="age">Age:</label>
+  <input type="age" id="player_age" placeholder="Enter player age" name="player_age" multiple inputs>
+
+  <button type="submit">Submit</button>
+</form>
+
   </body>
 </html>
