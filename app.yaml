@@ -7,8 +7,11 @@ handlers:
 - url: /style
   static_dir: style
 
+- url: /images
+  static_dir: images
+
 - url: /.*
-  script: main.app
+  script: mainapp.app
 
 
 libraries:
