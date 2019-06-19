@@ -51,9 +51,9 @@ class FAQsHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ("/", WelcomeHandler),
-    ("/Main", MainHandler),
-    ("/Generate", GenerateHandler),
-    ("/AboutUs", AboutUsHandler),
-    ("/Feedback", FeedbackHandler),
-    ("/FAQ", FAQsHandler),
+    ("/main", MainHandler),
+    ("/generate", GenerateHandler),
+    ("/about", AboutUsHandler),
+    ("/feedback", FeedbackHandler),
+    ("/faq", FAQsHandler)
 ], debug=True)
