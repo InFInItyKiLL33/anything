@@ -13,17 +13,25 @@
 }
 #faq_title {
   margin-top: 30px;
-  margin-left: 15px;
+  margin-left: 64px;
+  font-size: 25px;
 }
-.QandA .Answer {
+.QandA {
+  border: 1px solid rgba(250, 250, 250);
+  border-radius: 7px;
+  box-shadow: 0 0 5px 0px #000000;
+}
+.Answer {
   display: none;
 }
 
 .QandA {
-  margin-left: 10px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .Answer, .Question, .QandA{
+  font-size: 20px;
   background-color: rgb(255,255,255);
 }
 
