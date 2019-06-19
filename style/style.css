@@ -8,7 +8,23 @@
 
 .faq_body {
   margin: 0px;
+  background-color: rgb(235,235,235);
   font-family: 'Permanent Marker', cursive;
+}
+#faq_title {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+.QandA .Answer {
+  display: none;
+}
+
+.QandA {
+  margin-left: 10px;
+}
+
+.Answer, .Question, .QandA{
+  background-color: rgb(255,255,255);
 }
 
 .feedback_body {
