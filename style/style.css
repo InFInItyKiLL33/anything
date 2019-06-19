@@ -1,5 +1,5 @@
 .about_us_body {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Marcellus SC', serif;
 }
 
 .welcome_body {
@@ -12,16 +12,20 @@
 }
 
 .feedback_body {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Marcellus SC', serif;
 }
 
 .generate_body {
-  font-family: 'Marcellus SC',w serif;
+  font-family: 'Marcellus SC', serif;
 }
 
 .main_body {
   margin: 0px;
   font-family: 'Rye', cursive;
+}
+
+body {
+  background: rgb(235, 235, 235);
 }
 
 #welcome_name {
@@ -70,7 +74,7 @@ footer {
   margin-left: -1px;
   border: 1px solid black;
   display: flex;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
   height: 40px;
 }
 
@@ -99,7 +103,7 @@ footer {
 .nav_direct {
   margin-left: 15px;
   border: none;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
 }
 
 ul {
