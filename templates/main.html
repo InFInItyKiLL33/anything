@@ -16,12 +16,13 @@
       </div>
     </div>
     <div>
-      <div id="filter">
+    <div id="filter">
       filters optional
-      </div>
+    </div>
+      <br>
 
-      <div>
-        Age group:
+      <div class= "age">
+        ==>Age group:
 
         <label one class="container">
           <input type="radio" checked="checked">
@@ -61,8 +62,8 @@
 
       </div>
 
-      <div>
-        restrictions:
+      <div class="restrictions">
+        ==>restrictions:
         <label class="container">
           <input type="radio">
           <span class="checkmark"></span>
@@ -80,16 +81,20 @@
         Adult
     </div>
     <br>
+    <div id="compulsory">
     *Compulsory*
-
-    <form class="form-inline" action="/action_page.php">
-  <label for="name">Name:</label>
+    </div>
+    <br>
+<div class="name_and_age">
+  <form class="form-inline" action="/action_page.php">
+  <label for="name">==>Name:</label>
   <input type="name" id="player_name" placeholder="Enter  player names" name="player_name" multiple inputs>
-  <label for="age">Age:</label>
+  <label for="age">==>Age:</label>
   <input type="age" id="player_age" placeholder="Enter player age" name="player_age" multiple inputs>
 
   <button type="submit">Submit</button>
-</form>
+  </form>
+</div>
 
   </body>
 </html>
