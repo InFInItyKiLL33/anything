@@ -1,8 +1,10 @@
 .about_us_body {
+  margin: 0px;
   font-family: 'Permanent Marker', cursive;
 }
 
 .welcome_body {
+  margin: 0px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -12,15 +14,17 @@
 }
 
 .feedback_body {
+  margin: 0px;
   font-family: 'Permanent Marker', cursive;
 }
 
 .generate_body {
+  margin: 0px;
   font-family: 'Marcellus SC',w serif;
 }
 
 .main_body {
-  opacity: 0.5;
+  margin:0px;
   font-family: 'Rye', cursive;
 }
 
@@ -47,6 +51,7 @@
   background-color: #254558;
   line-height: 10%;
 }
+
 #title_border_radius {
   border: 2px solid #c7e8ff;
   --padding: 2% 0 2% 0;
@@ -54,6 +59,7 @@
   border-radius: 20px;
   background-color: #c7e8ff;
   text-align: center;
+  font-family: 'Rye', cursive;
 }
 
 /* footer */
