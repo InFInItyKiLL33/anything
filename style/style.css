@@ -101,10 +101,11 @@ footer {
 }
 
 .nav {
-  margin-left: 75%;
+  position: absolute;
+  right: 30px;
 }
 .nav_direct {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .ClickableArea{
