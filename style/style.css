@@ -1,12 +1,9 @@
 .about_us_body {
-  margin: 0px;
   font-family: 'Permanent Marker', cursive;
 }
 
 .welcome_body {
-  margin: 0px;
   font-family: 'Josefin Sans', sans-serif;
-  background-size: 100%;
 }
 
 .faq_body {
@@ -15,12 +12,10 @@
 }
 
 .feedback_body {
-  margin: 0px;
   font-family: 'Permanent Marker', cursive;
 }
 
 .generate_body {
-  margin: 0px;
   font-family: 'Marcellus SC',w serif;
 }
 
@@ -48,7 +43,6 @@
   font-size: 40px;
 }
 
-/* title */
 #title_border {
   margin: 0px;
   height: 20%;
@@ -64,7 +58,6 @@
   background-color: #254558;
   line-height: 10%;
 }
-
 #title_border_radius {
   border: 2px solid #c7e8ff;
   --padding: 2% 0 2% 0;
@@ -72,8 +65,6 @@
   border-radius: 20px;
   background-color: #c7e8ff;
   text-align: center;
-  font-family: 'Rye', cursive;
-  box-shadow: 0px 0px 0px 1px black;
 }
 
 /* footer */
@@ -87,11 +78,12 @@ footer {
   flex-flow: row wrap;
   background-color: grey;
 }
-
 .navigation, .nav {
   list-style: none;
-  display: flex;
-  padding: 5px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 }
 
 .nav {
