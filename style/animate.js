@@ -30,5 +30,67 @@ $('#Gen_another').click(function() {
   $("#after").fadeOut(function() {
     $("#before").fadeIn();
   });
+});
 
+//Aboutus.HTML
+$('#Z_pic').click(function(){
+  console.log("hey");
+  $(this).fadeOut(function(){
+    $("#Z_story").fadeIn();
+  });
+});
+$('#R_pic').click(function(){
+  // DEBUG: console.log("hey");
+  $(this).fadeOut(function(){
+    $("#R_story").fadeIn();
+  });
+});
+$('#J_pic').click(function(){
+  // DEBUG: console.log("hey");
+  $(this).fadeOut(function(){
+    $("#J_story").fadeIn();
+  });
+});
+
+$('#J_story').click(function(){
+  // DEBUG: console.log("hey");
+  $(this).fadeOut(function(){
+    $('#J_pic').fadeIn();
+  });
+});
+$('#R_story').click(function(){
+  // DEBUG: console.log("hey");
+  $(this).fadeOut(function(){
+    $('#R_pic').fadeIn();
+  });
+});
+$('#Z_story').click(function(){
+  // DEBUG: console.log("hey");
+  $(this).fadeOut(function(){
+    $('#Z_pic').fadeIn();
+  });
+});
+
+$('#pic_email').click(function(){
+  console.log("hey");
+  $(this).fadeOut(function(){
+    $("#email_item").fadeIn();
+  });
+});
+$('#pic_follow').click(function(){
+  console.log("hey");
+  $(this).fadeOut(function(){
+    $("#follow_item").fadeIn();
+  });
+});
+
+$("#follow_item").click(function(){
+  $(this).fadeOut(function(){
+    $("#pic_follow").fadeIn();
+  });
+});
+$("#email_item").click(function(){
+  $(this).fadeOut(function(){
+    $("#pic_email").fadeIn();
+  });
 });
