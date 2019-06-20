@@ -46,7 +46,7 @@
 
 #faq_title {
   margin-top: 30px;
-  margin-left: 64px;
+  margin-left: 96px;
   font-size: 25px;
 }
 
@@ -57,15 +57,12 @@
   padding-top: 0;
   padding-bottom: 0;
   margin-top: -10px;
+  margin-left: 64px;
+  margin-right: 64px;
 }
 
 .Answer {
   display: none;
-}
-
-.QandA {
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .Answer, .Question {
