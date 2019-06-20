@@ -130,6 +130,7 @@
   letter-spacing: 0.5px;
   font-family: 'Harmattan', sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #feedbackName {
@@ -343,6 +344,7 @@ footer {
   margin-left: 15px;
   border: none;
   background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 ul {
@@ -353,6 +355,7 @@ ul {
   margin-left: 3%;
   white-space: nowrap;
   margin-top: 11px;
+  cursor: pointer;
 }
 
 .ClickableArea{
@@ -483,6 +486,7 @@ ul {
   padding-left: 15px;
   background-color: #254558;
   color: white;
+  cursor: pointer;
 }
 
 #filter{
@@ -531,6 +535,7 @@ ul {
   height: 45px;
   width: 100px;
   font-weight: bold;
+  cursor: pointer;
 }
 /*Main End*/
 
@@ -584,16 +589,17 @@ footer {
   display: flex;
   text-align: center;
   justify-content: flex-end;
-  margin-top: 6.5px;
+  margin-top: 4.5px;
   margin-bottom: 12.5px;
 }
 
 .nav {
   padding-left: 0%;
+  margin-top: none;
 }
 
 .nav2 {
-  width: 87.5%;
+  width: 92.5%;
   white-space: nowrap;
 }
 
@@ -605,6 +611,8 @@ footer {
   margin-left: 15px;
   border: none;
   background-color: rgb(255, 255, 255);
+  font-family: 'Harmattan', sans-serif;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -612,9 +620,16 @@ ul {
 }
 
 #website_name {
-  margin-left: 3%;
   white-space: nowrap;
   margin-top: 11px;
+  background-color: rgb(0, 0, 0, 0);
+  font-family: 'Harmattan', sans-serif;
+  font-weight: bold;
+  border: none;
+}
+
+#website_name_form {
+  margin-left: 1%;
 }
 
 .ClickableArea{
@@ -627,6 +642,7 @@ ul {
   font-size: 30px;
   border-radius: 10%;
   box-shadow: 1px 1px 1px 1px black;
+  cursor: pointer;
 }
 
 .ClickableAreaForm {
