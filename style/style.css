@@ -112,13 +112,13 @@
 
 #submit_feedback{
   text-align: right;
-  margin-right: 6%;
+  margin-right: 5.25%;
 }
 
 #submit_button{
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 12.5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 11px;
   padding-bottom: 20px;
   border-radius: 7.5px;
   background-color: #254558;
@@ -126,7 +126,7 @@
   color: white;
   height: 45px;
   border: none;
-  box-shadow: 0px 0px 3px 1px black;
+  box-shadow: 1.5px 1.5px 4px 1.5px rgb(0, 0, 0, 0.25);
   letter-spacing: 0.5px;
   font-family: 'Harmattan', sans-serif;
   font-weight: bold;
@@ -135,19 +135,24 @@
 #feedbackName {
   width: 92.5%;
   border-radius: 10px;
-  padding: 6px 10px 16px 10px;
+  padding: 6px 15px 16px 15px;
   height: 15px;
   font-family: 'Harmattan', sans-serif;
   font-size: 16px;
+  box-shadow: 1.5px 1.5px 4px 1.5px rgb(0, 0, 0, 0.25);
+  resize: none;
+  overflow: hidden;
 }
 
 #feedbackComment {
   width: 92.5%;
   height: 525px;
   border-radius: 10px;
-  padding: 6px 10px 10px 10px;
+  padding: 10px 15px 10px 15px;
   font-family: 'Harmattan', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  box-shadow: 1.5px 1.5px 4px 1.5px rgb(0, 0, 0, 0.25);
+  resize: none;
 }
 
 .generate_body {
