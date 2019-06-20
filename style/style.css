@@ -1,5 +1,6 @@
 .about_us_body {
   font-family: 'Marcellus SC', serif;
+  background: rgb(235, 235, 235);
 }
 
 /*Welcome_HTML*/
@@ -71,11 +72,13 @@
 
 .feedback_body {
   font-family: 'Marcellus SC', serif;
+  background: rgb(235, 235, 235);
 }
 
 
 .generate_body {
   font-family: 'Marcellus SC', serif;
+  background: rgb(235, 235, 235);
 }
 
 #before {
@@ -181,12 +184,8 @@
 .main_body {
   margin: 0px;
   font-family: 'Harmattan', sans-serif;
-}
-
-body {
   background: rgb(235, 235, 235);
 }
-
 
 
 #title_border {
