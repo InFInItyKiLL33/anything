@@ -6,7 +6,29 @@ $('.QandA').click(function(){
 
 
 //generate.html
-$('.change_me').click(function(){
-  $("#after").css({"display" : "block"})
-  $("#before").css({"display" : "none"})
+$('#after').hide();
+
+$('.change_me').click(function() {
+  $("#before").fadeOut(function() {
+    $("#after").fadeIn();
+  });
+
+  //$("#after").css({"display" : "block"});
+
+});
+
+$('#True').click(function() {
+  document.getElementById('Question_type').innerHTML = "Truth";
+});
+
+$('#Dare').click(function() {
+  document.getElementById('Question_type').innerHTML = "Dare";
+});
+
+$('#Gen_another').click(function() {
+  //$("#after").css({"display" : "block"});
+  $("#after").fadeOut(function() {
+    $("#before").fadeIn();
+  });
+
 });

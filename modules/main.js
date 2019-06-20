@@ -7,34 +7,73 @@ $(document).ready(function() {
     })
 })
 
-$(document).ready(function() {
-    $("#mainGenerateButton").click(function() {
-        var values = {};
-        var names = [];
-        var age = [];
-        var ageGroup = [];
-        var restriction = [];
+function onPlayClick() {
+    var values = {};
+    var names = [];
+    var age = [];
+    var ageGroup = [];
+    var restriction = [];
+    var toStop = false
 
-        for (let i = 0; i < index + 1; i++) {
-            values[String(i)] = $("input[name = a" + String(i) + "0]").val() + ", " + $("input[name = a" + String(i) + "1]").val();
+    for (let i = 0; i < index + 1; i++) {
+        $("input[name = a" + String(i) + "0]").css("border","1px solid rgb(0, 0, 0, 0.25)");
+        $("input[name = a" + String(i) + "1]").css("border","1px solid rgb(0, 0, 0, 0.25)");
+        values[String(i)] = $("input[name = a" + String(i) + "0]").val() + ", " + $("input[name = a" + String(i) + "1]").val();
+        if ($("input[name = a" + String(i) + "0]").val() == "") {
+            $("input[name = a" + String(i) + "0]").css("border","1px solid #a30000");
+            toStop = true;
         }
+        if ($("input[name = a" + String(i) + "1]").val() == "") {
+            $("input[name = a" + String(i) + "1]").css("border","1px solid #a30000");
+            toStop = true;
+        }
+        console.log(parseInt($("input[name = a" + String(i) + "1]").val()))
+        if (Number.isNaN(parseInt($("input[name = a" + String(i) + "1]").val()))) {
+            $("input[name = a" + String(i) + "1]").css("border","1px solid #a30000");
+            toStop = true;
+        }
+    }
 
-        for (let i = 0; i < 6; i++) {
-            if ($("#age" + String(i + 1)).is(":checked")) {
-                ageGroup[i] = 1;
+    for (let i = 0; i < 6; i++) {
+        if ($("#age" + String(i + 1)).is(":checked")) {
+            ageGroup[i] = 1;
+        } else {
+            ageGroup[i] = 0;
+        }
+        if (i < 3) {
+            if ($("#r" + String(i + 1)).is(":checked")) {
+                restriction[i] = 1;
             } else {
-                ageGroup[i] = 0;
-            }
-            if (i < 3) {
-                if ($("#r" + String(i + 1)).is(":checked")) {
-                    restriction[i] = 1;
-                } else {
-                    restriction[i] = 0;
-                }
+                restriction[i] = 0;
             }
         }
+    }
 
+    if (toStop == false) {
         values["filters"] = String(ageGroup) + "," + String(restriction);
-        $.post("/generate", values);
-    })
-})
+        post("/generate", values);
+    }
+}
+
+function post(path, params, method='post') {
+
+    // The rest of this code assumes you are not using a library.
+    // It can be made less wordy if you use one.
+    const form = document.createElement('form');
+    form.method = method;
+    form.action = path;
+  
+    for (const key in params) {
+      if (params.hasOwnProperty(key)) {
+        const hiddenField = document.createElement('input');
+        hiddenField.type = 'hidden';
+        hiddenField.name = key;
+        hiddenField.value = params[key];
+  
+        form.appendChild(hiddenField);
+      }
+    }
+  
+    document.body.appendChild(form);
+    form.submit();
+  }

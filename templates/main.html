@@ -156,8 +156,8 @@
 
     <!-- Start of Play button -->
     <div>
-      <form class = "mainGenerate"><!-- method = "post" action = "/generate" -->
-        <input type = "button" value = "PLAY" id = "mainGenerateButton">
+      <form class = "mainGenerate" onsubmit = "onPlayClick(); return false;" method = "post"><!-- method = "post" action = "/generate" -->
+        <input type = "submit" value = "PLAY" id = "mainGenerateButton">
       </form>
     </div>
     <!-- End of Play button -->
