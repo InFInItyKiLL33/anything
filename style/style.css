@@ -85,6 +85,35 @@
 #name_before {
   position: relative;
   text-align: center;
+  margin-top: 18%;
+  font-size: 100px;
+  line-height: 50%;
+}
+
+.change_me {
+  font-size: 30px;
+}
+
+#True {
+  margin-right: 30px;
+  background-color: #42c72c;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #42c72c;
+  border-radius: 5px;
+}
+
+#Dare {
+  margin-left: 30px;
+  background-color: #ce2a2a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #ce2a2a;
+  border-radius: 5px;
 }
 
 #after {
