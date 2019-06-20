@@ -87,6 +87,14 @@
   margin-bottom: 10px;
 }
 
+.FAQSeparator {
+  width: calc(100% - 15px);
+  height: 1px;
+  background-color: black;
+  margin-bottom: -25px;
+    margin-top: 25px;
+}
+
 /*FAQ HTML*/
 .feedback_body {
   font-family: 'Marcellus SC', serif;
@@ -223,112 +231,13 @@ color: white
   font-size: 30px;
 }
 
+
+/*Main Start*/
 .main_body {
   margin: 0px;
   font-family: 'Harmattan', sans-serif;
   background: rgb(235, 235, 235);
 }
-
-
-#title_border {
-  background-color: #254558;
-}
-
-#title {
-  text-align: center;
-  --padding: 1% 38% 1% 38%;
-  padding: var(--padding);
-  background-clip: content-box;
-  background-color: #254558;
-  line-height: 10%;
-}
-
-#title_border_radius {
-  border: 1px solid #c7e8ff;
-  border-radius: 20px;
-  background-color: #c7e8ff;
-  text-align: center;
-  height: 50px;
-  box-shadow: 1px 1px 1px 1px rgb(25, 25, 25, 0.75);
-}
-
-#titleOnline {
-  margin-top: 0;
-}
-
-#titleTOD {
-  margin-bottom: 15px;
-}
-
-/* footer */
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  margin-left: -1px;
-  border: 1px solid black;
-  display: flex;
-  background-color: rgb(255, 255, 255);
-  height: 40px;
-}
-
-.navigation, .nav {
-  list-style: none;
-  display: flex;
-  text-align: center;
-  justify-content: flex-end;
-  margin-top: 6.5px;
-  margin-bottom: 12.5px;
-}
-
-.nav {
-  padding-left: 0%;
-}
-
-.nav2 {
-  width: 87.5%;
-  white-space: nowrap;
-}
-
-#navFAQ {
-  text-align: right;
-}
-
-.nav_direct {
-  margin-left: 15px;
-  border: none;
-  background-color: rgb(255, 255, 255);
-}
-
-ul {
-  text-decoration: none;
-}
-
-#website_name {
-  margin-left: 3%;
-  white-space: nowrap;
-  margin-top: 11px;
-}
-
-.ClickableArea{
-  border: 1px solid rgb(255, 255, 255, 0.7);
-  background-color: rgb(255, 255, 255, 0.7);
-  color: black;
-  width: 85px;
-  height: 50px;
-  text-align: center;
-  font-size: 30px;
-  border-radius: 10%;
-  box-shadow: 1px 1px 1px 1px black;
-}
-
-.ClickableAreaForm {
-  text-align: center;
-  padding-top: 1%;
-}
-
-
 
 .age{
   margin-left: 110px;
@@ -487,4 +396,105 @@ ul {
   height: 45px;
   width: 100px;
   font-weight: bold;
+}
+/*Main End*/
+
+
+#title_border {
+  background-color: #254558;
+}
+
+#title {
+  text-align: center;
+  --padding: 1% 38% 1% 38%;
+  padding: var(--padding);
+  background-clip: content-box;
+  background-color: #254558;
+  line-height: 10%;
+}
+
+#title_border_radius {
+  border: 1px solid #c7e8ff;
+  border-radius: 20px;
+  background-color: #c7e8ff;
+  text-align: center;
+  height: 50px;
+  box-shadow: 1px 1px 1px 1px rgb(25, 25, 25, 0.75);
+}
+
+#titleOnline {
+  margin-top: 0;
+}
+
+#titleTOD {
+  margin-bottom: 15px;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  margin-left: -1px;
+  border: 1px solid black;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  font-family: 'Harmattan', sans-serif;
+}
+
+.navigation, .nav {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: 6.5px;
+  margin-bottom: 12.5px;
+}
+
+.nav {
+  padding-left: 0%;
+}
+
+.nav2 {
+  width: 87.5%;
+  white-space: nowrap;
+}
+
+#navFAQ {
+  text-align: right;
+}
+
+.nav_direct {
+  margin-left: 15px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+ul {
+  text-decoration: none;
+}
+
+#website_name {
+  margin-left: 3%;
+  white-space: nowrap;
+  margin-top: 11px;
+}
+
+.ClickableArea{
+  border: 1px solid rgb(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255, 0.7);
+  color: black;
+  width: 85px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10%;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.ClickableAreaForm {
+  text-align: center;
+  padding-top: 1%;
 }
