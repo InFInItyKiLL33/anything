@@ -120,7 +120,7 @@
 
 #faq_title {
   margin-top: 30px;
-  margin-left: 64px;
+  margin-left: 96px;
   font-size: 25px;
 }
 
@@ -131,15 +131,12 @@
   padding-top: 0;
   padding-bottom: 0;
   margin-top: -10px;
+  margin-left: 64px;
+  margin-right: 64px;
 }
 
 .Answer {
   display: none;
-}
-
-.QandA {
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .Answer, .Question {
@@ -173,8 +170,8 @@
 
 
 .feedback_body {
-  font-family: 'Marcellus SC', serif;
-  background-color:#c7cad6;
+  font-family: 'Harmattan', sans-serif;
+  background-color: rgb(235,235,235);
   margin: 0px;
 }
 #feedback{
@@ -182,24 +179,55 @@
 
 }
 #feedback_response{
- margin-left: 5%;
- margin-top:-1%;
+  margin-left: 5%;
+  margin-top: -1%;
 }
+
 #submit_feedback{
-  margin-left: 87%;
+  text-align: right;
+  margin-right: 5.25%;
 }
 
 #submit_button{
-padding-left: 30px;
-padding-right:30px;
-padding-top: 20px;
-padding-bottom: 20px;
-border-radius: 25%;
-background-color: #254558;
-font-size: 15px;
-color: white
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 11px;
+  padding-bottom: 20px;
+  border-radius: 7.5px;
+  background-color: #254558;
+  font-size: 15px;
+  color: white;
+  height: 45px;
+  border: none;
+  box-shadow: 1.5px 1.5px 4px 1.5px rgb(0, 0, 0, 0.25);
+  letter-spacing: 0.5px;
+  font-family: 'Harmattan', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+#feedbackName {
+  width: 92.5%;
+  border-radius: 10px;
+  padding: 6px 15px 16px 15px;
+  height: 15px;
+  font-family: 'Harmattan', sans-serif;
+  font-size: 16px;
+  box-shadow: 1.5px 1.5px 4px 1.5px rgb(0, 0, 0, 0.25);
+  resize: none;
+  overflow: hidden;
+}
+
+#feedbackComment {
+  width: 92.5%;
+  height: 525px;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  font-family: 'Harmattan', sans-serif;
+  font-size: 15px;
+  box-shadow: 1.5px 1.5px 4px 1.5px rgb(0, 0, 0, 0.25);
+  resize: none;
+}
 
 .generate_body {
   font-family: 'Marcellus SC', serif;
@@ -389,6 +417,7 @@ footer {
   margin-left: 15px;
   border: none;
   background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 ul {
@@ -399,6 +428,7 @@ ul {
   margin-left: 3%;
   white-space: nowrap;
   margin-top: 11px;
+  cursor: pointer;
 }
 
 .ClickableArea{
@@ -529,6 +559,7 @@ ul {
   padding-left: 15px;
   background-color: #254558;
   color: white;
+  cursor: pointer;
 }
 
 #filter{
@@ -577,6 +608,7 @@ ul {
   height: 45px;
   width: 100px;
   font-weight: bold;
+  cursor: pointer;
 }
 /*Main End*/
 
@@ -630,16 +662,17 @@ footer {
   display: flex;
   text-align: center;
   justify-content: flex-end;
-  margin-top: 6.5px;
+  margin-top: 4.5px;
   margin-bottom: 12.5px;
 }
 
 .nav {
   padding-left: 0%;
+  margin-top: none;
 }
 
 .nav2 {
-  width: 87.5%;
+  width: 92.5%;
   white-space: nowrap;
 }
 
@@ -651,6 +684,8 @@ footer {
   margin-left: 15px;
   border: none;
   background-color: rgb(255, 255, 255);
+  font-family: 'Harmattan', sans-serif;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -658,9 +693,16 @@ ul {
 }
 
 #website_name {
-  margin-left: 3%;
   white-space: nowrap;
   margin-top: 11px;
+  background-color: rgb(0, 0, 0, 0);
+  font-family: 'Harmattan', sans-serif;
+  font-weight: bold;
+  border: none;
+}
+
+#website_name_form {
+  margin-left: 1%;
 }
 
 .ClickableArea{
@@ -673,6 +715,7 @@ ul {
   font-size: 30px;
   border-radius: 10%;
   box-shadow: 1px 1px 1px 1px black;
+  cursor: pointer;
 }
 
 .ClickableAreaForm {

@@ -17,24 +17,24 @@
         </div>
       </div>
     </div>
-    <div id= feedback>
-     <h2> Feedback </h2>
-    </div>
-    <div id=feedback_response>
-    <textarea rows="5" cols="210">
-      Your Name
-    </textarea>
-    <textarea rows="35" cols="210">
-      Your Comments
-    </textarea>
-    </div>
-    <div id= "submit_feedback">
-      <button id = "submit_button" type="button" onclick="alert('Thank you for your feedback! Have a nice day :)')">Submit!</button>
-    </div>
+    
     <!--Everything else here-->
 
+    <div id = feedback>
+     <h2> Feedback </h2>
+    </div>
+    <div id = feedback_response>
+    <textarea id = "feedbackName" placeholder = "Name.." maxlength = "200"></textarea>
+    <textarea id = "feedbackComment" placeholder = "Comments.."></textarea>
+    </div>
+    <form id= "submit_feedback" method = "get" action = "/main">
+      <button id = "submit_button" type="submit" onclick="alert('Thank you for your feedback! Have a nice day :)')">SUBMIT</button>
+    </form>
+
     <footer id = "faqFooter">
-      <h5 id = "website_name">TODO generator</h5>
+      <form action = "/main" method = "get" id = "website_name_form">
+        <input type = "submit" id = "website_name" value = "TODO generator">
+      </form>
       <div class = "nav2">
         <div class = "navigation">
           <form class = "nav" id = "navFAQ" action = "/faq" method = "get">
