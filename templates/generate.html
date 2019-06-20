@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Harmattan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" charset="utf-8"></script>
+
     <title>TODO</title>
   </head>
   <body class = "faq_body">
@@ -19,13 +22,32 @@
     </div>
 
     <!--Everything else here-->
+    <div id = "before_and_after">
+      <div id = "before">
+        <div id = "name_before">
+          John
+        <br>
+        <button type = "button"  class = "change_me" id="True"> True </button>
+        <button type = "button"  class = "change_me" id="Dare"> Dare </button>
+        </div>
+      </div>
 
+      <div id = "after">
+        <div id = "name_after">
+          ?
+        </div>
+        <div id = "true_or_false">
+        </div>
+      </div>
+    </div>
+
+    <!---->
     <footer id = "faqFooter">
       <h5 id = "website_name">TODO generator</h5>
       <div class = "nav2">
         <div class = "navigation">
           <form class = "nav" id = "navFAQ" action = "/faq" method = "get">
-            <input type = "submit" value = "FAQ" class = "nav_direct"> 
+            <input type = "submit" value = "FAQ" class = "nav_direct">
           </form>
           <form class = "nav" action = "/feedback" method = "get">
             <input type = "submit" value = "Feedback" class = "nav_direct">
@@ -33,8 +55,10 @@
           <form class = "nav" action = "/about" method = "get">
             <input type = "submit" value = "About Us" class = "nav_direct">
           </form>
-        </div>  
+        </div>
       </div>
     </footer>
+
+    <script src="../style/animate.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Harmattan&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css">
+    <meta charset = "utf-8">
+    <link href = "https://fonts.googleapis.com/css?family=Permanent+Marker" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Rye&display=swap" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Harmattan&display=swap" rel = "stylesheet">
+    <link rel = "stylesheet" href = "../style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src = "modules/main.js"></script>
     <title>TODO</title>
   </head>
   <body class = "faq_body">
+    <!-- Header Start -->
     <div id = "title_border">
       <div id = "title">
         <div id = "title_border_radius">
@@ -17,91 +20,69 @@
         </div>
       </div>
     </div>
+    <!-- Header End -->
 
     <!--Everything else here-->
+    <!-- Start of Filters -->
     <div id="filter" class = "main_body">
-      <div>
-        filters optional
+      <div id = "mainFilter">
+        <div id = "mainFilterWord">
+          Filters
+        </div>
+        <div class= "age">
+          <strong>Age group:</strong>
+          <form class = "checkboxesForm">
+            <input type = "checkbox" id = "age1"><a class = "checkboxes">&lt12</a>
+            <input type = "checkbox" id = "age2"><a class = "checkboxes">12 ~ 18</a>
+            <input type = "checkbox" id = "age3"><a class = "checkboxes">19 ~ 30</a>
+            <input type = "checkbox" id = "age4"><a class = "checkboxes">31 ~ 45</a>
+            <input type = "checkbox" id = "age5"><a class = "checkboxes">46 ~ 65</a>
+            <input type = "checkbox" id = "age6"><a class = "checkboxes">&gt65</a>
+          </form>
+        </div>
+        <div class="restrictions">
+          <strong>Restrictions:</strong>
+          <form class = "checkboxesForm">
+            <input type = "checkbox" id = "r1"><a class = "checkboxes">PG</a>
+            <input type = "checkbox" id = "r2"><a class = "checkboxes">Mature</a>
+            <input type = "checkbox" id = "r3"><a class = "checkboxes">Adult</a>
+          </form>
+        </div>
       </div>
-      <br>
-
-      <div class= "age">
-        ==>Age group:
-
-        <label class="container">
-          <input type="radio" checked="checked">
-          <span class="checkmark"></span>
-        </label>
-        12
-
-        <label class="container">
-          <input type="radio">
-          <span class="checkmark"></span>
-        </label>
-        12~18
-
-        <label class="container">
-          <input type="radio">
-          <span class="checkmark"></span>
-        </label>
-        19~25
-
-        <label class="container">
-          <input type="radio">
-          <span class="checkmark"></span>
-        </label>
-        26~40
-
-        <label class="container">
-          <input type="radio">
-          <span class="checkmark"></span>
-        </label>
-        41~65
-
-        <label class="container">
-          <input type="radio">
-          <span class="checkmark"></span>
-        </label>
-        >65
-      </div>
-
-
-      <div class="restrictions">
-        ==>restrictions:
-        <label class="container">
-          <input type="radio">
-          <span class="checkmark"></span>
-        </label>
-        PG
-        <label class="container">
-          <input type="radio">
-          <span class="checkmark"></span>
-        </label>
-        Mature
-        <label class="container">
-          <input type="radio">
-          <span class="checkmark"></span>
-        </label>
-        Adult
-      </div>
-      <br>
-      <div id="compulsory">
-      *Compulsory*
-      </div>
-      <br>
-      <div class="name_and_age">
-        <form class="form-inline" action="/action_page.php">
-        <label for="name">==>Name:</label>
-        <input type="name" id="player_name" placeholder="Enter  player names" name="player_name" multiple inputs>
-        <label for="age">==>Age:</label>
-        <input type="age" id="player_age" placeholder="Enter player age" name="player_age" multiple inputs>
-
-        <button type="submit">Submit</button>
+      <!--End of Filters-->
+      <!-- Start of Players -->
+      <div id = "mainPlayer">
+        <div id = "newPlayer"> <!-- Used for JavaScript Append -->
+          <div id = "mainFilterWord">
+            Players
+          </div>
+          <form class = "checkboxesForm">
+            <input type = "text" class = "mainText" placeholder = "Player Name..." name = "a00">
+            <input type = "text" class = "mainText2" placeholder = "Age" name = "a01">
+          </form>
+          <!-- <br>
+          <form class = "checkboxesForm">
+            <input type = "text" class = "mainText" placeholder = "Player Name..." name = "">
+            <input type = "text" class = "mainText2" placeholder = "Age" name = "">
+          </form> --> <!-- Use comment region for JavaScript append, name is <index><input no. (0/1)> -->
+        </div>
+        <form class = "checkboxesAdd">
+          <input type = "button" class = "mainAdd" value = "+"> <!-- Add button -->
         </form>
       </div>
     </div>
+    <!-- End of Players -->
+    <div style = "padding-bottom:135px"></div> <!-- For Scrolling -->
 
+    <!-- Start of Play button -->
+    <div>
+      <form class = "mainGenerate"><!-- method = "post" action = "/generate" -->
+        <input type = "button" value = "PLAY" id = "mainGenerateButton">
+      </form>
+    </div>
+    <!-- End of Play button -->
 
+    <!-- Footer -->
     <footer id = "faqFooter">
       <h5 id = "website_name">TODO generator</h5>
       <div class = "nav2">
@@ -118,5 +99,6 @@
         </div>
       </div>
     </footer>
+    <!-- Footer End -->
   </body>
 </html>
