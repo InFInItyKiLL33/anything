@@ -97,7 +97,7 @@
 
 /*FAQ HTML*/
 .feedback_body {
-  font-family: 'Marcellus SC', serif;
+  font-family: 'Harmattan', sans-serif;
   background-color:#c7cad6;
   margin: 0px
 }
@@ -106,24 +106,49 @@
 
 }
 #feedback_response{
- margin-left: 5%;
- margin-top:-1%;
+  margin-left: 5%;
+  margin-top: -1%;
 }
+
 #submit_feedback{
-  margin-left: 87%;
+  text-align: right;
+  margin-right: 6%;
 }
 
 #submit_button{
-padding-left: 30px;
-padding-right:30px;
-padding-top: 20px;
-padding-bottom: 20px;
-border-radius: 25%;
-background-color: #254558;
-font-size: 15px;
-color: white
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 12.5px;
+  padding-bottom: 20px;
+  border-radius: 7.5px;
+  background-color: #254558;
+  font-size: 15px;
+  color: white;
+  height: 45px;
+  border: none;
+  box-shadow: 0px 0px 3px 1px black;
+  letter-spacing: 0.5px;
+  font-family: 'Harmattan', sans-serif;
+  font-weight: bold;
 }
 
+#feedbackName {
+  width: 92.5%;
+  border-radius: 10px;
+  padding: 6px 10px 16px 10px;
+  height: 15px;
+  font-family: 'Harmattan', sans-serif;
+  font-size: 16px;
+}
+
+#feedbackComment {
+  width: 92.5%;
+  height: 525px;
+  border-radius: 10px;
+  padding: 6px 10px 10px 10px;
+  font-family: 'Harmattan', sans-serif;
+  font-size: 14px;
+}
 
 .generate_body {
   font-family: 'Marcellus SC', serif;
