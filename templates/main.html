@@ -32,20 +32,20 @@
         <div class= "age">
           <strong>Age group:</strong>
           <form class = "checkboxesForm">
-            <input type = "checkbox"><a class = "checkboxes">&lt12</a>
-            <input type = "checkbox"><a class = "checkboxes">12 ~ 18</a>
-            <input type = "checkbox"><a class = "checkboxes">19 ~ 30</a>
-            <input type = "checkbox"><a class = "checkboxes">31 ~ 45</a>
-            <input type = "checkbox"><a class = "checkboxes">46 ~ 65</a>
-            <input type = "checkbox"><a class = "checkboxes">&gt65</a>
+            <input type = "checkbox" id = "age1"><a class = "checkboxes">&lt12</a>
+            <input type = "checkbox" id = "age2"><a class = "checkboxes">12 ~ 18</a>
+            <input type = "checkbox" id = "age3"><a class = "checkboxes">19 ~ 30</a>
+            <input type = "checkbox" id = "age4"><a class = "checkboxes">31 ~ 45</a>
+            <input type = "checkbox" id = "age5"><a class = "checkboxes">46 ~ 65</a>
+            <input type = "checkbox" id = "age6"><a class = "checkboxes">&gt65</a>
           </form>
         </div>
         <div class="restrictions">
           <strong>Restrictions:</strong>
           <form class = "checkboxesForm">
-            <input type = "checkbox"><a class = "checkboxes">PG</a>
-            <input type = "checkbox"><a class = "checkboxes">Mature</a>
-            <input type = "checkbox"><a class = "checkboxes">Adult</a>
+            <input type = "checkbox" id = "r1"><a class = "checkboxes">PG</a>
+            <input type = "checkbox" id = "r2"><a class = "checkboxes">Mature</a>
+            <input type = "checkbox" id = "r3"><a class = "checkboxes">Adult</a>
           </form>
         </div>
       </div>
@@ -57,14 +57,14 @@
             Players
           </div>
           <form class = "checkboxesForm">
-            <input type = "text" class = "mainText" placeholder = "Player Name..." name = "00">
-            <input type = "text" class = "mainText2" placeholder = "Age" name = "01">
+            <input type = "text" class = "mainText" placeholder = "Player Name..." name = "a00">
+            <input type = "text" class = "mainText2" placeholder = "Age" name = "a01">
           </form>
           <!-- <br>
           <form class = "checkboxesForm">
             <input type = "text" class = "mainText" placeholder = "Player Name..." name = "">
             <input type = "text" class = "mainText2" placeholder = "Age" name = "">
-          </form> --> <!-- Use comment region for JavaScript prepend, name is <index><input no. (0/1)> -->
+          </form> --> <!-- Use comment region for JavaScript append, name is <index><input no. (0/1)> -->
         </div>
         <form class = "checkboxesAdd">
           <input type = "button" class = "mainAdd" value = "+"> <!-- Add button -->
@@ -76,8 +76,8 @@
 
     <!-- Start of Play button -->
     <div>
-      <form class = "mainGenerate">
-        <input type = "submit" value = "PLAY" id = "mainGenerateButton">
+      <form class = "mainGenerate"><!-- method = "post" action = "/generate" -->
+        <input type = "button" value = "PLAY" id = "mainGenerateButton">
       </form>
     </div>
     <!-- End of Play button -->

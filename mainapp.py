@@ -18,23 +18,33 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write(jinjaEnv.get_template("templates/main.html").render())
 
+    def post(self):
+        pass
+
 class GenerateHandler(webapp2.RequestHandler):
     def get(self):
-        self.redirect("/Main")
+        self.redirect("/main")
         
     def post(self): ##change most "" to actual name of input
+        print("LUL")
         global namesDict
         i = 0
         while True: #get all the names and age input
-            try:
-                namesDict.update({self.response.get("" + i): self.response.get("" + i)})
-            except:
-                self.redirect("/Main")
+            if self.request.get(str(i)) == "":
+                print(self.request.get(str(i)))
+                if i == 0:
+                    self.redirect("/main")
+                    return
                 break
+            #00 -> name 1, 01 -> age 1, 10 -> name 2, 11 -> age 2, 20 -> name 3, 21 -> age 3, etc.
+            namesDict.update({
+                str(i) + "0": self.request.get(str(i)).split(", ")[0],
+                str(i) + "1": self.request.get(str(i)).split(", ")[1]
+            })
             i += 1
-        randValue = random.randint(0, len(namesDict)) #select random value for indexing
-        namesDictSingle = {"" + randValue: namesDict["" + randValue]} #saves the indexed element to namesDictSingle
-        self.response.write(jinjaEnv.get_template("templates/generate.html").render(namesDictSingle))
+        namesDict.update({"filters": self.request.get("filters")})
+        print(namesDict)
+        self.response.write(jinjaEnv.get_template("templates/generate.html").render(namesDict))
 
 class AboutUsHandler(webapp2.RequestHandler):
     def get(self):
