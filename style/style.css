@@ -52,8 +52,11 @@
 
 .QandA {
   border: 1px solid rgba(250, 250, 250);
-  border-radius: 7px;
+  border-radius: 10px;
   box-shadow: 0 0 5px 0px #000000;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: -10px;
 }
 
 .Answer {
@@ -65,12 +68,26 @@
   margin-right: 32px;
 }
 
-.Answer, .Question, .QandA{
-  font-size: 20px;
+.Answer, .Question {
+  font-size: 16px;
   background-color: rgb(255,255,255);
+  padding-left: 10px;
+  margin-top: -20px;
 }
-/*-----*/
 
+.QandA{
+  font-size: 16px;
+  background-color: rgb(255,255,255);
+  padding-left: 10px;
+  margin-top: -15px;
+}
+
+.QnAText {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*FAQ HTML*/
 .feedback_body {
   font-family: 'Marcellus SC', serif;
   background-color:#c7cad6;
