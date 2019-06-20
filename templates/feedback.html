@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <title>TODO</title>
   </head>
-  <body class = "faq_body">
+  <body class = "feedback_body">
     <div id = "title_border">
       <div id = "title">
         <div id = "title_border_radius">
@@ -17,10 +17,20 @@
         </div>
       </div>
     </div>
-    <h2>your feedback</h2>
-<button type="button" onclick="alert('Thank you for your feedback! :)')">Submit!</button>
-
-
+    <div id= feedback>
+     <h2> Feedback </h2>
+    </div>
+    <div id=feedback_response>
+    <textarea rows="5" cols="210">
+      Your Name
+    </textarea>
+    <textarea rows="35" cols="210">
+      Your Comments
+    </textarea>
+    </div>
+    <div id= "submit_feedback">
+      <button id = "submit_button" type="button" onclick="alert('Thank you for your feedback! Have a nice day :)')">Submit!</button>
+    </div>
     <!--Everything else here-->
 
     <footer id = "faqFooter">

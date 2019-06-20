@@ -1,4 +1,5 @@
 .about_us_body {
+  margin: 0px;
   font-family: 'Marcellus SC', serif;
   background: rgb(235, 235, 235);
 }
@@ -72,7 +73,30 @@
 
 .feedback_body {
   font-family: 'Marcellus SC', serif;
-  background: rgb(235, 235, 235);
+  background-color:#c7cad6;
+  margin: 0px
+}
+#feedback{
+  margin-left: 5%;
+
+}
+#feedback_response{
+ margin-left: 5%;
+ margin-top:-1%;
+}
+#submit_feedback{
+  margin-left: 87%;
+}
+
+#submit_button{
+padding-left: 30px;
+padding-right:30px;
+padding-top: 20px;
+padding-bottom: 20px;
+border-radius: 25%;
+background-color: #254558;
+font-size: 15px;
+color: white
 }
 
 
