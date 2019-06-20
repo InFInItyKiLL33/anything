@@ -6,13 +6,15 @@ $('.QandA').click(function(){
 
 
 //generate.html
-$('after').hide();
+$('#after').hide();
 
-$('.change_me').click(function(){
-  $("#before").stop().fadeOut();
+$('.change_me').click(function() {
+  $("#before").fadeOut(function() {
+    $("#after").fadeIn();
+  });
 
   //$("#after").css({"display" : "block"});
-  $("#after").stop().fadeIn();
+
 });
 
 $('#True').click(function() {
@@ -24,9 +26,9 @@ $('#Dare').click(function() {
 });
 
 $('#Gen_another').click(function() {
-  $("#before").stop().fadeIn();
-
   //$("#after").css({"display" : "block"});
-  $("#after").stop().fadeOut();
+  $("#after").fadeOut(function() {
+    $("#before").fadeIn();
+  });
 
 });
