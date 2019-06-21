@@ -25,10 +25,10 @@
     <div id = "before_and_after">
       <div id = "before">
         <div id = "name_before">
-          {{randomName}}
-        <br>
-        <button type = "button"  class = "change_me" id="True"> Truth </button>
-        <button type = "button"  class = "change_me" id="Dare"> Dare </button>
+            {{randomName}}
+          <br>
+          <button type = "button"  class = "change_me" id="True"> Truth </button>
+          <button type = "button"  class = "change_me" id="Dare"> Dare </button>
         </div>
       </div>
 
@@ -42,8 +42,11 @@
               <h2 id = "Question_type"> <!--Truth or Dare-->
                 Truth
               </h2>
-              <h5 id = "Question_TD"> <!--Question-->
+              <h5 class = "Question_TD" id = "Question_TD_D"> <!--Question-->
                 {{dares[range(0, dares|length) | random]}}
+              </h5>
+              <h5 class = "Question_TD" id = "Question_TD_T"> <!--Question-->
+                {{truth[range(0, dares|length) | random]}}
               </h5>
             </div>
           </div>
