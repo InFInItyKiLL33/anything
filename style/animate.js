@@ -32,8 +32,10 @@ $('#Gen_another').click(function() {
   });
 });
 
-//Aboutus.HTML
+//welcome.HTML
 
+
+//Aboutus.HTML
 $('#Z_pic').mouseenter(function(){
   // DEBUG: console.log("hey");
   $(this).fadeOut(function(){
@@ -95,3 +97,5 @@ $("#email_item").mouseleave(function(){
     $("#pic_email").fadeIn();
   });
 });
+
+//main.html
