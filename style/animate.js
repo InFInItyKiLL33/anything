@@ -33,63 +33,64 @@ $('#Gen_another').click(function() {
 });
 
 //Aboutus.HTML
-$('#Z_pic').click(function(){
-  console.log("hey");
+
+$('#Z_pic').mouseenter(function(){
+  // DEBUG: console.log("hey");
   $(this).fadeOut(function(){
     $("#Z_story").fadeIn();
   });
 });
-$('#R_pic').click(function(){
+$('#R_pic').mouseenter(function(){
   // DEBUG: console.log("hey");
   $(this).fadeOut(function(){
     $("#R_story").fadeIn();
   });
 });
-$('#J_pic').click(function(){
+$('#J_pic').mouseenter(function(){
   // DEBUG: console.log("hey");
   $(this).fadeOut(function(){
     $("#J_story").fadeIn();
   });
 });
 
-$('#J_story').click(function(){
+$('#J_story').mouseleave(function(){
   // DEBUG: console.log("hey");
   $(this).fadeOut(function(){
     $('#J_pic').fadeIn();
   });
 });
-$('#R_story').click(function(){
+$('#R_story').mouseleave(function(){
   // DEBUG: console.log("hey");
   $(this).fadeOut(function(){
     $('#R_pic').fadeIn();
   });
 });
-$('#Z_story').click(function(){
+$('#Z_story').mouseleave(function(){
   // DEBUG: console.log("hey");
   $(this).fadeOut(function(){
     $('#Z_pic').fadeIn();
   });
 });
 
-$('#pic_email').click(function(){
+$('#pic_email').mouseenter(function(){
   console.log("hey");
   $(this).fadeOut(function(){
     $("#email_item").fadeIn();
   });
 });
-$('#pic_follow').click(function(){
+$('#pic_follow').mouseenter(function(){
   console.log("hey");
   $(this).fadeOut(function(){
     $("#follow_item").fadeIn();
   });
 });
 
-$("#follow_item").click(function(){
+$("#follow_item").mouseleave(function(){
   $(this).fadeOut(function(){
     $("#pic_follow").fadeIn();
   });
 });
-$("#email_item").click(function(){
+$("#email_item").mouseleave(function(){
   $(this).fadeOut(function(){
     $("#pic_email").fadeIn();
   });
