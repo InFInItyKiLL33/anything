@@ -25,7 +25,7 @@
     <div id = "before_and_after">
       <div id = "before">
         <div id = "name_before">
-          John
+          {{randomName}}
         <br>
         <button type = "button"  class = "change_me" id="True"> Truth </button>
         <button type = "button"  class = "change_me" id="Dare"> Dare </button>
@@ -34,7 +34,7 @@
 
       <div id = "after">
         <div id = "name_after">
-          John
+          {{randomName}}
         </div>
         <div id = "True_dare">
           <div id = "Question">
@@ -43,16 +43,19 @@
                 Truth
               </h2>
               <h5 id = "Question_TD"> <!--Question-->
-                To be or not to be?
+                {{dares[range(0, dares|length) | random]}}
               </h5>
             </div>
           </div>
         </div>
-
-        <button type = "button" id="Gen_another"> Generate Another! </button>
+        <form method = "get" action = "/generate">
+          <button type = "submit" id="Gen_another"> Generate Another! </button>
+        </form>
         <br>
         <h4 id = "Or"> Or.... </h4>
-        <button type = "button" id="New_game"> New TOD game </button>
+        <form method = "get" action = "/main">
+          <button type = "submit" id="New_game"> New TOD game </button>
+        </form>
 
       </div>
     </div>

@@ -13,6 +13,12 @@ handlers:
 - url: /modules
   static_dir: modules
 
+- url: /questions
+  static_dir: questions
+
+- url: /dare.txt
+  static_dir: dare.txt
+
 - url: /.*
   script: mainapp.app
 
