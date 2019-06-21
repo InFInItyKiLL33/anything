@@ -19,10 +19,12 @@ $('.change_me').click(function() {
 
 $('#True').click(function() {
   document.getElementById('Question_type').innerHTML = "Truth";
+  $("#Question_TD_D").hide();
 });
 
 $('#Dare').click(function() {
   document.getElementById('Question_type').innerHTML = "Dare";
+  $("#Question_TD_T").hide();
 });
 
 $('#Gen_another').click(function() {

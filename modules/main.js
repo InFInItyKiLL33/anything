@@ -48,7 +48,7 @@ function onPlayClick() {
             }
         }
     }
-
+    console.log(values)
     if (toStop == false) {
         values["filters"] = String(ageGroup) + "," + String(restriction);
         post("/generate", values);
