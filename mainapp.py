@@ -46,8 +46,12 @@ class MainHandler(webapp2.RequestHandler):
 class GenerateHandler(webapp2.RequestHandler):
     def get(self):
         global namesDict, numberOfNames
-        namesDict.update({"randomName": namesDict["a" + str(random.randint(0, numberOfNames - 1)) + "0"]})
-        self.response.write(jinjaEnv.get_template("templates/generate.html").render(namesDict))
+        try:
+            namesDict.update({"randomName": namesDict["a" + str(random.randint(0, numberOfNames - 1)) + "0"]})
+        except:
+            self.redirect("/main")
+        else:
+            self.response.write(jinjaEnv.get_template("templates/generate.html").render(namesDict))
         #self.redirect("/main")
         
     def post(self): ##change most "" to actual name of input
