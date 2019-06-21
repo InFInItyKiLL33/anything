@@ -15,3 +15,13 @@ kids
 14.act like a old person
 15.act like you have helium gas in ur mouth and sing twinkle twinkle little start
 16.do 5 jumping jacks while singing a song
+
+Desc4ibe the sky without the words blue and white., 1, 1, 1, 1, 1, 1, 1, 1, 1
+Spin around 10 times and try to walk straight., 1, 1, 1, 1, 1, 1, 1, 1, 1
+From now until your next turn, every time someone talks, interrupt by saying - ‘That is a lie.’, 1, 1, 1, 1, 1, 1, 1, 1, 1
+Be silent and say nothing from now until your next turn., 1, 1, 1, 1, 1, 1, 1, 1, 1
+Hum a song of your choice, don’t stop until someone correctly guesses the song., 1, 1, 1, 1, 1, 1, 1, 1, 1
+Do your best acceptance speech for an award of your choice., 1, 1, 1, 1, 1, 1, 1, 1, 1
+Pretend like a CEO of a company., 1, 1, 1, 1, 1, 1, 1, 1, 1
+Show your browser history to all the players., 0, 1, 1, 1, 1, 1, 0, 1, 1
+Pretend to be another player for the rest of the game., 1, 1, 1, 1, 1, 1, 1, 1, 1
