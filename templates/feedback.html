@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Harmattan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" charset="utf-8"></script>
     <title>TODO</title>
   </head>
   <body class = "feedback_body">
@@ -19,17 +20,18 @@
     </div>
     
     <!--Everything else here-->
-
-    <div id = feedback>
-     <h2> Feedback </h2>
+    <div class = "About_us_body2">
+      <div id = feedback>
+      <h2> Feedback </h2>
+      </div>
+      <div id = feedback_response>
+      <textarea id = "feedbackName" placeholder = "Name.." maxlength = "200"></textarea>
+      <textarea id = "feedbackComment" placeholder = "Comments.."></textarea>
+      </div>
+      <form id= "submit_feedback" method = "get" action = "/main">
+        <button id = "submit_button" type="submit" onclick="alert('Thank you for your feedback! Have a nice day :)')">SUBMIT</button>
+      </form>
     </div>
-    <div id = feedback_response>
-    <textarea id = "feedbackName" placeholder = "Name.." maxlength = "200"></textarea>
-    <textarea id = "feedbackComment" placeholder = "Comments.."></textarea>
-    </div>
-    <form id= "submit_feedback" method = "get" action = "/main">
-      <button id = "submit_button" type="submit" onclick="alert('Thank you for your feedback! Have a nice day :)')">SUBMIT</button>
-    </form>
 
     <footer id = "faqFooter">
       <form action = "/main" method = "get" id = "website_name_form">
@@ -49,5 +51,6 @@
         </div>
       </div>
     </footer>
+    <script src="../style/animate.js" charset="utf-8"></script>
   </body>
 </html>

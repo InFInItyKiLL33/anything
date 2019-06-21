@@ -5,6 +5,9 @@
   background: rgb(235, 235, 235);
 }
 
+.About_us_body2 {
+  display: none;
+}
 #About_us_title {
   font-size: 40px;
   color: black;
@@ -50,14 +53,27 @@
 }
 
 .contact_us {
-  font-size: 25px;
+  font-size: 22px;
   color: black;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  text-align: center;
 }
 
+#Zhi_Qi_2 {
+  padding-left: 50px;
+}
+
+#Riddhi_2 {
+  margin-left: -70px;
+}
+
+#Jun_kang_2 {
+  margin-left: -70px;
+  margin-right: 10px;
+}
 .aboutUsName {
   padding-top: 64px;
   margin-bottom: -24px;

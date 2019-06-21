@@ -97,3 +97,7 @@ $("#email_item").mouseleave(function(){
     $("#pic_email").fadeIn();
   });
 });
+
+$(document).ready(
+  $(".About_us_body2").fadeIn(1250)
+)

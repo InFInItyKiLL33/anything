@@ -22,44 +22,46 @@
     </div>
 
     <!--Everything else here-->
-    <div id = "before_and_after">
-      <div id = "before">
-        <div id = "name_before">
-            {{randomName}}
-          <br>
-          <button type = "button"  class = "change_me" id="True"> Truth </button>
-          <button type = "button"  class = "change_me" id="Dare"> Dare </button>
-        </div>
-      </div>
-
-      <div id = "after">
-        <div id = "name_after">
-          {{randomName}}
-        </div>
-        <div id = "True_dare">
-          <div id = "Question">
-            <div id = "Question_border">
-              <h2 id = "Question_type"> <!--Truth or Dare-->
-                Truth
-              </h2>
-              <h5 class = "Question_TD" id = "Question_TD_D"> <!--Question-->
-                {{dares[range(0, dares|length) | random]}}
-              </h5>
-              <h5 class = "Question_TD" id = "Question_TD_T"> <!--Question-->
-                {{truth[range(0, dares|length) | random]}}
-              </h5>
-            </div>
+    <div class = "About_us_body2">
+      <div id = "before_and_after">
+        <div id = "before">
+          <div id = "name_before">
+              {{randomName}}
+            <br>
+            <button type = "button"  class = "change_me" id="True"> Truth </button>
+            <button type = "button"  class = "change_me" id="Dare"> Dare </button>
           </div>
         </div>
-        <form method = "get" action = "/generate">
-          <button type = "submit" id="Gen_another"> Generate Another! </button>
-        </form>
-        <br>
-        <h4 id = "Or"> Or.... </h4>
-        <form method = "get" action = "/main">
-          <button type = "submit" id="New_game"> New TOD game </button>
-        </form>
 
+        <div id = "after">
+          <div id = "name_after">
+            {{randomName}}
+          </div>
+          <div id = "True_dare">
+            <div id = "Question">
+              <div id = "Question_border">
+                <h2 id = "Question_type"> <!--Truth or Dare-->
+                  Truth
+                </h2>
+                <h5 class = "Question_TD" id = "Question_TD_D"> <!--Question-->
+                  {{dares[range(0, dares|length) | random]}}
+                </h5>
+                <h5 class = "Question_TD" id = "Question_TD_T"> <!--Question-->
+                  {{truth[range(0, dares|length) | random]}}
+                </h5>
+              </div>
+            </div>
+          </div>
+          <form method = "get" action = "/generate">
+            <button type = "submit" id="Gen_another"> Generate Another! </button>
+          </form>
+          <br>
+          <h4 id = "Or"> Or.... </h4>
+          <form method = "get" action = "/main">
+            <button type = "submit" id="New_game"> New TOD game </button>
+          </form>
+
+        </div>
       </div>
     </div>
     <!---->
